@@ -1,15 +1,14 @@
-const boton=document.getElementById("open");
-const carta=document.getElementById("letter");
+const boton=document.getElementById("music");
+const audio=document.getElementById("song");
 
 boton.onclick=()=>{
 
-carta.style.display="block";
-
-boton.style.display="none";
-
-window.scrollTo({
-top:document.body.scrollHeight,
-behavior:"smooth"
-});
+if(audio.paused){
+audio.play();
+boton.innerHTML="🖤 Nuestra canción";
+}else{
+audio.pause();
+boton.innerHTML="▶ Nuestra canción";
+}
 
 }
