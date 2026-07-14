@@ -1,47 +1,44 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
-
 <meta charset="UTF-8">
-
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Para mi idiota 🖤</title>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
-
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;500&family=Inter:wght@300&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;500;700&family=Inter:wght@300&display=swap" rel="stylesheet">
 
 <link rel="stylesheet" href="style.css">
-
 </head>
 
 <body>
 
-<div class="background"></div>
+<div id="particles"></div>
 
-<div class="overlay">
+<div class="container">
 
 <h1>Para mi idiota 🖤</h1>
 
 <p class="subtitle">
-Pulsa el botón cuando estés preparado.
+Un mes oficialmente.<br>
+Aunque para mí empezó mucho antes.
 </p>
 
-<button id="open">
-Abrir mi carta
-</button>
+<div class="gallery">
 
-<div id="letter">
+<img src="foto1.jpg">
 
-<h2>Te amo.</h2>
+<img src="foto2.jpg">
 
-<p>
+<img src="foto3.jpg">
 
-Venga va, voy a sacar mi lado mas empalagoso como siempre solo por ti.
+</div>
+
+<div class="letter">
+
+<Venga va, voy a sacar mi lado mas empalagoso como siempre solo por ti.
 Que decirte que no te haya dicho una y mil veces amor. Para mi no cuplimos hoy un mes, ya llevamos desde aquella noche que te conocí y supe que seria diferente.
 Se que hay noches donde te comes la cabeza con situaciones que piensas que van a pasar entre nosotros, como que me voy a ir, y se me hace tan imposible que quepa en esa cabecita esas mierdas.
 Dios, me falta arrancarme el corazon y dartelo. Considero que soy muy complicada de llevar, y por eso siempre oculto muchas de mis facetas ante el exterior, he puesto muchos muros ante los demas, me da miedo que alguien me conozca tan bien. Al parecer mi mayor miedo se ha cumplido, y no ha sido tan horrible como pensaba. Nunca tuve que ocultar o reprimir mi forma de ser contigo, desde el momento 0 fui yo, nunca me habia pasado. Como siempre el niño este rompiendo mis barreras. Siempre me has demostrado que me quieres, ante cualquier situación, al igual que siempre me has dado mi sitio. Soy ta feliz de estar contigo.
@@ -65,22 +62,21 @@ Te amo con todo mi corazon de loca, desde mi parte toxica a la estable.
 
 Siempre vas a ser tu, idiota.
 
-Pd: He escrito esto con nuestra playlist d fondo.
-
-</p>
+Pd: He escrito esto con nuestra playlist d fondo.>
 
 </div>
 
-</div>
+<button id="music">
+▶ Nuestra canción
+</button>
 
-<audio controls autoplay loop>
-
-<source src="music.mp3" type="audio/mpeg">
-
+<audio id="song" loop>
+<source src="pretty.mp3" type="audio/mpeg">
 </audio>
+
+</div>
 
 <script src="script.js"></script>
 
 </body>
-
 </html>
